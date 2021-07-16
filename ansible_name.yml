@@ -1,7 +1,7 @@
 ---
  - name: Learning to apply ansible 
    hosts: localhost
-   gatherfacts: false
+   gatherfacts: true
    become: true
    tasks:
    - name: The Name of os family
@@ -12,6 +12,9 @@
        msg: "This is {{inventory_hostname}}"
    - name: The name of system
      debug: 
+       msg: "This is {{ansible_system}}"
+   - name: name of system
+     debug:
        msg: "This is {{ansible_system}}"
      
      
