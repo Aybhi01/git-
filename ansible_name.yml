@@ -16,6 +16,8 @@
    - name: name of system
      debug:
        msg: "This is {{ansible_system}}"
-     
+   - name: Name of ansible distribution 
+     debug:
+       msg: "this is {{ansible_distribution}}"
      
  
