@@ -1,8 +1,8 @@
 ---
  - name: Learning to apply ansible 
    hosts: localhost
-   gatherfacts: true
-   become: true
+   gather_facts: yes
+   become: yes
    tasks:
    - name: The Name of os family
      debug:
